@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gian's CMSC57 e-Portfolio</title>
+        <meta charset="utf-8">
+
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    </head>
+
+    <body class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-success bg-success sticky-top px-3 py-2">
+            <a class="navbar-brand fw-bold text-light" href="#">CMSC57 Portfolio</a>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <div class="dropdown">
+                        <button class="btn nav-link text-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Counting Principles</button>
+                        <ul class="dropdown-menu px-2">
+                            <li class="mb-1"><a href="#topic1">Basics of Counting</a></li>
+                            <li class="mb-1"><a href="#topic2">Permutations and Combinations</a></li>
+                            <li class="mb-1"><a href="#topic3">Binomial Coefficients</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn nav-link text-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Algebraic Structures and Probability</button>
+                        <ul class="dropdown-menu px-2">
+                            <li class="mb-1"><a href="#topic4">Algebraic Structures</a></li>
+                            <li class="mb-1"><a href="#topic5">Finite Probability</a></li>
+                            <li class="mb-1"><a href="#topic6">Expected Value and Variance</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn nav-link text-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Graph Theory</button>
+                        <ul class="dropdown-menu px-2">
+                            <li class="mb-1"><a href="#topic7">Euler and Hamiltonian Paths</a></li>
+                            <li class="mb-1"><a href="#topic8">Shortest Path Problems</a></li>
+                            <li class="mb-1"><a href="#topic9">Graph Coloring</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container w-50">
+            <h1 class="display-2 mt-5 text-success fw-bold">CMSC57 e-Portfolio</h1>
+            <p>by Gian Paolo D. Plariza<br>2022-05204</p>
+
+            <div class="card bg-light mt-4">
+                <div class="card-body">
+                    In this portfolio, I will be discussing what I have learned in this course. I will be picking three topics that struck me the most from each long exam and I will be analyzing, explaining and reflecting each of them.
+                </div>
+            </div>
+
+            <h1 class="fst-italic fw-light mt-5"><span class="bg-success text-light px-2 py-1 rounded"><b>PART 1.</b> COUNTING PRINCIPLES</span></h1>
+
+            <!-- TOPIC 1 -->
+            <h1 class="display-5 text-success fst-italic mt-4" id="topic1">TOPIC 1</h1>
+            <h3 class="mb-3">Basics of Counting</h3>
+            <p>
+                This was the introductory lesson of this course. I find this particular lesson very interesting as the problems concerning this topic (which were seemingly complicated and complex at first glance) were solved by simple fundamental rules. These rules are the following: <mark class="rounded">sum rule and product rule.</mark> These two counting rules serve as the foundation of combinatorics.
+            </p>
+
+            <div class="card bg-light my-4">
+                <div class="card-body">
+                    <b>SUM RULE:</b> if there are <var>x</var> distinct ways to do one task and <var>y</var> distinct ways to do another task, then the number of ways to do the first task or the second task is <var>x + y</var><br><br>
+                    <b>PRODUCT RULE:</b> if there are <var>x</var> ways to do one task and <var>y</var> ways to do another task, then the number of ways to do both the first and second task are <var>x * y</var>
+                </div>
+            </div>
+
+            <p>
+                Going into this topic I thought it would be pretty easy as I knew that I could solve these types of problems with common sense, but as the problems got progressively harder I realized that the topic wasn’t as easy as I thought it would be. Thankfully, the counting rules made life easier especially when there were multiple conditions for a single problem.
+            </p>
+
+            <!-- TOPIC 2 -->
+            <h1 class="display-5 text-success fst-italic mt-4" id="topic2">TOPIC 2</h1>
+            <h3 class="mb-3">Permutations and Combinations</h3>
+            <p>
+                Permutations and combinations are two different ways to <mark class="rounded">arrange a specific number of elements to a subset with a fixed size.</mark>
+            </p>
+
+            <div class="card bg-light my-4">
+                <div class="card-body">
+                    <b>PERMUTATION:</b> the elements of the subset are listed <mark class="rounded">in a specific order</mark><br>
+                    <b>COMBINATION:</b> the elements of the subset can be listed <mark class="rounded">in any order</mark><br><br>
+
+                    <i>the amount of ways to order the set [1, 2, 3] using permutations:<br></i>
+                    [1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]<br><br>
+
+                    <i>the amount of ways to order the set [1, 2, 3] using combinations:<br></i>
+                    [1, 2, 3] (order does not matter)
+                </div>
+            </div>
+
+            <p>
+                Honestly, this is a topic that I’m still having trouble with. I have a hard time determining whether or not I should solve a problem through permutations or combinations. It gets worse when it comes to word problems and my brain gets jumbled on how I could solve the problem (especially when it's stars-and-lines). I understand the concepts, I just need to work on the application side of things. 
+                <br><br>
+                Overall, learning this topic was a bit of a challenge. But, it gave me the realization that discrete math really can be used to solve real-life problems.
+            </p>
+
+            <!-- TOPIC 3 -->
+            <h1 class="display-5 text-success fst-italic mt-4" id="topic3">TOPIC 3</h1>
+            <h3 class="mb-3">Binomial Coefficients</h3>
+            <p>
+                This was when I learned that <mark class="rounded">one could derive the binomial coefficient of a polynomial using combinations.</mark> I was especially shocked by how easy it was to do.
+            </p>
+
+            <div class="card bg-light my-4">
+                <div class="card-body">
+                    In polynomial expansion, instead of solving for the whole thing,<br>
+                    <var>(x + 3)<sup>3</sup> = (x + 3)(x + 3)(x + 3) = (x<sup>2</sup> + 6x + 9)(x + 3) = x<sup>3</sup> + 9x<sup>2</sup> + 27x + 27<br><br></var>
+
+                    one could simply use the binomial coefficient formula.<br>
+                    <var>(x + 3)<sup>3</sup> = (3C3)(x<sup>3</sup>) + (3C2)(x<sup>2</sup>) + (3C1)(x<sup>1</sup>) + (3C0)(x<sup>0</sup>) = x<sup>3</sup> + 9x<sup>2</sup> + 27x + 27</var>
+                </div>
+            </div>
+            
+            <p>
+                Although I don’t think there’s any practical real-life use for this formula, it still amazed me because <mark class="rounded">it was such a simple application of combinatorics,</mark> but I never expected it to be used this way. This made me appreciate combinatorics even more: if the combination formula could be linked to binomial coefficients, who knows what more things we can apply combinatorics in?
+            </p>
+
+
+            <h1 class="fst-italic fw-light mt-5"><span class="bg-success text-light px-2 py-1 rounded"><b>PART 2.</b> ALGEBRAIC STRUCTURES AND PROBABILITY</span></h1>
+            
+            <!-- TOPIC 4 -->
+            <h1 class="display-5 text-success fst-italic mt-4" id="topic4">TOPIC 4</h1>
+            <h3 class="mb-3">Algebraic Structures</h3>
+            <p>
+                The first half of this lesson talks about the properties of a group. A group is a set of elements with a binary operation <var>*</var> which satisfies the <mark class="rounded">associative property</mark> (<var>(a * b) * c = a * (b * c)</var>), <mark class="rounded">identity property</mark> (<var>a * e = e * a = a</var> where <var>e</var> is an element within the set), and <mark class="rounded">inverse property</mark> (<var>a * x = x * a = e</var>).
+                <br><br>
+                The second half of this lesson was about modular arithmetic. Modular arithmetic is used to derive the remainder of two numbers. This can then be applied in various ways. The most prominent example is finding the greatest common divisor.
+            </p>
+
+            <div class="card bg-light my-4">
+                <div class="card-body">
+                    <mark class="rounded">GCD using modular arithmetic</mark><br>
+                    GCD of <span class="text-primary">81</span>, <span class="text-danger">18</span>:<br>
+                    <var><span class="text-primary fw-bold">81</span> = 4(<span class="text-danger fw-bold">18</span>) + 9</var><br>
+                    <var><span class="text-danger fw-bold">18</span> = 2(<span class="text-success fw-bold">9</span>) + 0</var>; end<br><br>
+
+                    the GCD of 81 and 18 is <span class="text-success fw-bold">9</span>, since the lower number when the function can no longer continue is 9
+                </div>
+            </div>
+                
+            <p>
+                I had fun solving algebraic structure problems. Getting a correct answer was really fulfilling and it gave me a small sense of victory, especially in problems that have lots of iterations. It’s mainly because I like solving abstract reasoning problems which are intellectually stimulating and challenging; this topic was no different from that.
+            </p>
+
+            <!-- TOPIC 5 -->
+            <h1 class="display-5 text-success fst-italic mt-4" id="topic5">TOPIC 5</h1>
+            <h3 class="mb-3">Finite Probability</h3>
+            <p>
+                The concept of finite probability can be summed up to this:
+            </p>
+
+            <div class="card bg-light my-4">
+                <div class="card-body">
+                    Given a sample space S (set of all possible outcomes), the probability of an event occurring (event being a subset of the sample space) E can be calculated by <mark class="rounded">dividing the number of possible outcomes for that event by the total number of possible outcomes</mark> P(E) = <var>|S|/|E|</var>.
+                </div>
+            </div>
+
+            <p>
+                I really despise probability. I find it a very hard concept to grasp, so just like permutations and combinations, this topic is one I still have trouble with to this day. Determining the probability of simple events such as dice rolls or lotteries is a little easier, but solving for card hand probabilities may be a little bit harder for me since the sample spaces may need to be derived from combinations or permutations (which I also have difficulty in understanding).
+                <br><br>
+                This is one of the tougher lessons I’ve had to learn because complicated problems that require lots of critical thinking screw me over. But all-in-all, I understand that this topic can be applied in the real world, specifically when you want to calculate the odds of you winning a game of chance, the odds of you winning the lottery, or even the odds of you grabbing the desired color of M&Ms from a basket.
+            </p>
+
+            <!-- TOPIC 6 -->
+            <h1 class="display-5 text-success fst-italic mt-4" id="topic6">TOPIC 6</h1>
+            <h3 class="mb-3">Expected Value and Variance</h3>
+            <p>
+                The expected value of a certain event is defined as the <mark class="rounded">summation of all outcomes multiplied by their corresponding probabilities.</mark> The variance describes the <mark class="rounded">variability of a certain outcome from the expected value.</mark>
+            </p>
+
+            <div class="card bg-light my-4">
+                <div class="card-body">
+                    To solve for the expected value of a certain event x, we take each outcome n and multiply it to its corresponding probability p. We then add it all together and we have the event’s expected value. This is basically the average or mean of the event.
+                    <br><br>
+                    <var>E(x) = n<sub>1</sub>p<sub>1</sub> + n<sub>2</sub>p<sub>2</sub> + … + n<sub>k</sub>p<sub>k</sub></var>
+                    <br><br>
+                    Variance on the other hand is a bit more complicated. We take each outcome n, square it, then multiply it to its corresponding probability p. We again add them all together, then subtract it by our event’s expected value squared. We can also get the standard deviation of the event by simply taking the square root of our variance.
+                    <br><br>
+                    <var>V(x) = n<sub>1</sub><sup>2</sup>p<sub>1</sub> + n<sub>2</sub><sup>2</sup>p<sub>2</sub> + … + n<sub>k</sub><sup>2</sup>p<sub>k</sub>< – E(x)<sup>2</sup></var>
+                </div>
+            </div>
+                
+            <p>
+                This topic was really easy for me mainly because this was already taught in our STAT 1 class, but it was also because the solution was very straightforward and didn’t require much critical thinking. The expected value and variance formulas are used to predict the probability of a certain outcome as well as the variability from the expected value, which are very helpful in the field of statistics.
+            </p>
+
+
+            <h1 class="fst-italic fw-light mt-5"><span class="bg-success text-light px-2 py-1 rounded"><b>PART 3.</b> GRAPHS</span></h1>
+
+            <!-- TOPIC 7 -->
+            <h1 class="display-5 text-success fst-italic mt-4" id="topic7">TOPIC 7</h1>
+            <h3 class="mb-3">Euler and Hamiltonian Paths</h3>
+            <p>
+                Euler and Hamiltonian paths are the foundational concepts of graph theory. A graph can have a Euler path, Hamiltonian path, Euler circuit or Hamiltonian circuit. A Euler path crosses all <mark class="rounded">edges</mark> of the graph exactly once, and has a different startpoint and endpoint. A Hamiltonian path on the other hand crosses all <mark class="rounded">vertices</mark> of the graph exactly once, and has a different startpoint and endpoint. The only difference between a Euler or Hamiltonian path to a Euler or Hamiltonian circuit is that a circuit has the same startpoint and endpoint.
+            </p>
+
+            <div class="card bg-light my-4">
+                <div class="card-body">
+                    <i>Euler vs. Hamiltonian<br>
+                    <mark class="rounded">Euler: EDGE; Hamiltonian: VERTEX</i></mark><br><br>
+                    
+                    <i>path vs. circuit in terms of start and end points</i><br>
+                    <mark class="rounded">path: DIFFERENT; circuit: SAME</mark><br><br>
+                    
+                    <i>EXPLAINED IN AIRPLANE TERMS:</i><br>
+                    Euler and Hamilton want to go on a vacation to several cities. Euler prefers to land in every single city exactly once, while Hamilton prefers to ride every possible plane exactly once. A path takes a one-way ticket, while a circuit takes a round trip.
+                </div>
+            </div>
+                
+            <p>    
+                I had so much fun learning this lesson because it was almost as if I was playing a puzzle game. The objective was to determine a path that visits all the edges or vertices of the graph, and there were different strategies to find it (Eulerian method or Hamiltonian method). It requires a lot of logic and reasoning to figure out, and even if you already found a path, there could be even more paths or circuits undiscovered. And even though there are theorems and shortcuts to this, I prefer eyeballing and figuring it out without them because it’s way more fun.
+                <br><br>
+                Overall, graph theory possesses puzzle-like elements that makes its problems engaging and enjoyable to solve, which is why I’m so hooked to it, and it's probably why graph theory is my favorite chapter out of the three.
+            </p>
+
+            <!-- TOPIC 8 -->
+            <h1 class="display-5 text-success fst-italic mt-4" id="topic8">TOPIC 8</h1>
+            <h3 class="mb-3">Shortest Path Problems</h3>
+            <p>
+                The shortest path of a weighted graph has two characteristics: it must have the shortest possible length, and if there are two or more possible shortest paths, the path that traverses lesser vertices will be the shortest path. Dijkstra’s algorithm gives us a simple way of finding the shortest path from the startpoint to all vertices of the graph:
+            </p>
+
+            <div class="card bg-light my-4">
+                <div class="card-body">
+                    – the startpoint will be our current vertex. consider its neighboring vertices
+                    <br>– calculate the distance from the initial vertex to each neighboring vertex through the current vertex. if it's shorter than the currently assigned distance, update the distance
+                    <br>– mark the current vertex as visited, then move to the vertex with the shortest distance and make it the new current vertex. repeat this process until all vertices are visited
+                    <br>– finally, backtrack from the destination vertex to the initial vertex using the shortest distances recorded.
+                </div>
+            </div>
+                
+            
+            <p>
+                This is a simple explanation of Dijkstra's algorithm. I know that this is the preferred method of determining the shortest path, but like I stated in the previous topic, I’d rather eyeball it than use the algorithm because in my opinion, it’s more engaging. It takes a bit of time, but it’s way more fun because you have to use logic and memory to figure out what the shortest path is, and it’s way more fulfilling when you finish it. Like I said previously, the analytical, puzzle-esque nature of graph theory lessons make me enjoy it all the more since I get to put my critical thinking and logic to the test.
+            </p>
+
+            <!-- TOPIC 9 -->
+            <h1 class="display-5 text-success fst-italic mt-4" id="topic9">TOPIC 9</h1>
+            <h3 class="mb-3">Graph Coloring</h3>
+            <p>
+                The purpose of graph coloring is to assign all vertices of the graph to a color such that no vertex of the same color is linked to each other. The minimum number of colors needed to create a properly colored graph is called the chromatic number. We can figure out if a graph is planar if its chromatic number is less than or equal to four. Any number above that means that the graph is non-planar.
+                <br><br>
+                Unlike the other topics, graph coloring is a concept of graph theory that doesn’t really have its own algorithm. One must use their critical thinking once again, which is what makes this final topic my favorite. It has the same puzzle-esque feel that the last two lessons had, but it’s way more fun since it involves colors. Additionally, optimizing the colors to achieve the lowest possible chromatic number is a lot of fun, so much fun in fact that it gives my brain the tingles.
+                <br><br>
+                Graph coloring is a vital tool for solving a variety of problems related to scheduling, resource allocation, optimization, and constraint satisfaction. By utilizing graph coloring techniques, researchers can optimize resource utilization, minimize conflicts, and find feasible solutions to complex problems across various domains.
+            </p>
+        </div>
+
+        <div class="m-4 text-light">hello im a spacer :)</div>
+        
+
+        <script src="popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
